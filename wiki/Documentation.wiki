@@ -1,0 +1,11 @@
+#Documentation for the Automated Testing System
+
+= Get the Documentation =
+
+Add your content here.
+
+
+= Details =
+
+The documentation is available in a PDF
+  * it should also be viewable via HTML
