@@ -1,0 +1,18 @@
+#summary A better way must be found to specify new machines for the ATS.
+#labels Phase-Requirements
+
+= Introduction =
+
+The use of Machine modules in the ATS has proven successful.  However, the way that a particular module is specified to the ATS can and should be improved.  For example, the top of chaosMulti.py contains some special shorthand such that, if MACHINE_TYPE is set to one of the values listed there, then chaosMulti becomes the chosen Machine and the number of processors per node is set from the value found on the appropriate line.  This is not good.
+
+
+= Details =
+
+
+We can iterate on these ideas, but some suggestions would be:
+
+* a default for the number of processors per node should exist, but one should be able to override this behavior from the command line
+
+* all "Livermore" specific names should be removed
+
+* we could encode useful information in the MACHINE_TYPE environment variable.  Ex:  SLURM_12_BATCH would indicate that we should use a machine module that uses SLURM, that there are 12 processors per node, and that the machine has a batch system.
