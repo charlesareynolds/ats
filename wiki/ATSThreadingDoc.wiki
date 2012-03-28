@@ -39,7 +39,7 @@ A test specifies 4 MPI tasks (np=4) and 2 threads per process (nt=2).  The test 
 
 *Example #2:*
 
-Some tests are to be run on a Blue Gene/Q machine, which supports SMT.  A custom Machine file was created to set the default value of threads_per_core to 2, in order to try out the SMT features of the machine.
+Some tests are to be run on a Blue Gene/Q machine, which supports SMT.  A custom Machine file was created to set the default value of threadsPerCore to 2, in order to try out the SMT features of the machine.
 
 A test specifies 8 MPI tasks (np=8) and 4 threads per process (nt=4). The test would be assigned (8*4)/2 = 16 processors, which is all the processors on a BG/Q node.
 
