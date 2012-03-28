@@ -24,7 +24,9 @@ ATS assumes that a node on a given HPC resource (i.e. a machine with a specified
 Using the definitions above, a test is assigned resources as follows:
 
 Let tpc =  (if threadsPerCore is specified for this test, then test.threadsPerCore.  Else, machine default threadsPerCore)
+
 Let np = np value for this test.  If not specified, 1.
+
 Let nt = nt value for this test.  If not specified, 1.  
 
 The number of "processors" this test will receive is N = (np*nt)/tpc. 
