@@ -46,6 +46,7 @@ A test specifies 8 MPI tasks (np=8) and 4 threads per process (nt=4). The test w
 *SLURM Considerations:*
 
 The value of np determines the integer value given to the -n argument of srun
+
 The value of nt/threadsPerCore determines the integer value given to the  -c or --cpus-per-task argument of srun.
 
 *"Wrap-around" Defaults:*
